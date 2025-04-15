@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Nosso Time de Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Nosso Time</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="patrocinadores.html">Patrocinadores</a></li>
+          <li><a href="mailto:seuemail@exemplo.com">Fale com a gente</a></li>
+        </ul>
+      </nav>      
+  </header>
+
+  <main>
+    <section>
+      <h1>Sobre Nós</h1>
+
+      <!-- Abas -->
+      <div class="tabs">
+        <button class="tab-button" onclick="showTab('historia')">Nossa História</button>
+        <button class="tab-button" onclick="showTab('conquistas')">Conquistas</button>
+      </div>
+
+      <!-- Conteúdo das Abas -->
+      <div id="historia" class="tab-content">
+        <h2>Nossa História</h2>
+        <p>Aqui você pode contar sobre a história de cada atleta, a formação do time e a história do técnico.</p>
+      </div>
+      <div id="conquistas" class="tab-content">
+        <h2>Conquistas</h2>
+        <p>Aqui, você pode contar sobre os campeonatos, troféus e medalhas conquistados pelo time.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Nosso Time de Vôlei</p>
+    <p>Desenvolvido por <a href="https://github.com/alicex2801" target="_blank">Alice Silva</a></p>
+  </footer>  
+
+  <script>
+    function showTab(tabName) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.style.display = 'none');
+      document.getElementById(tabName).style.display = 'block';
+    }
+
+    // Exibir a aba "Nossa História" por padrão
+    showTab('historia');
+  </script>
+
+</body>
+</html>
