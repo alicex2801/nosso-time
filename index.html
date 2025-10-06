@@ -1,56 +1,135 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosso Time de Vôlei</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FÚRIA RP</title>
+    <link rel="shortcut icon" href="./assets/Projeto Remover fundo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <!-- Botão de voltar ao topo -->
+    <button id="btn-topo" title="Voltar ao topo">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
 
-  <header id="topo">
-    <nav>
-        <ul>
-          <li><a href="index.html">Nosso Time</a></li>
-          <li><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li><a href="patrocinadores.html">Patrocinadores</a></li>
-          <li><a href="mailto:seuemail@exemplo.com">Fale com a gente</a></li>
-        </ul>
-      </nav>      
-  </header>
+    <header>
+        <button class="hamburguer" id="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-  <main>
-    <section>
-      <h1>Bem-vindo ao Nosso Time de Vôlei!</h1>
-      <p>Conheça nossa equipe, nossa história e nossos patrocinadores.</p>
-
-      <h2>Nosso Time</h2>
-      <div class="team-photos-coluna">
-        <div class="jogadora">
-          <img src="imagens/foto-jogadora1.jpg" alt="Jogadora 1" width="200">
-          <p>Nome da Jogadora 1</p>
+        <div class="logo-central">
+            <img src="./assets/Projeto Remover fundo.png" alt="logo do time" />
         </div>
-        <div class="jogadora">
-          <img src="imagem 1.jpg" alt="Jogadora 2" width="200">
-          <p>Nome da Jogadora 2</p>
-        </div>
-        <div class="tecnico">
-          <img src="imagens/foto-tecnico.jpg" alt="Técnico" width="200">
-          <p>Nome do Técnico</p>
-        </div>
-      </div>
 
-      <!-- Botão de Voltar ao Topo -->
-      <div class="voltar-topo">
-        <a href="#topo">↑ Voltar ao topo</a>
-      </div>
-    </section>
-  </main>
+        <h1 class="nome-time">Fúria RP</h1>
 
-  <footer>
-    <p>© 2025 - Nosso Time de Vôlei</p>
-    <p>Desenvolvido por <a href="https://github.com/alicex2801" target="_blank">Alice Silva</a></p>
-  </footer>  
+        <nav class="menu-topo">
+            <ul>
+                <li><a href="#inicio"><i class='bx bx-home'></i> Início</a></li>
+                <li><a href="#sobre"><i class='bx bx-book'></i> Sobre Nosso Time</a></li>
+                <li><a href="#equipe"><i class="fa-regular fa-file"></i> Equipe Técnica</a></li>
+                <li><a href="#endereco"><i class="fa-regular fa-map"></i> Endereço</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay">
+                <h2>Bem-vindos à equipe FÚRIA RP!</h2>
+                <p>Compromisso com a saúde, união e o bem-estar das nossas atletas.</p>
+                <a href="#sobre" class="hero-btn">Saiba Mais</a>
+            </div>
+            <img src="assets/foto do time.jpeg" alt="Banner" class="hero-img">
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+            <div class="about-content">
+                <div class="about-box">
+                    <h3>Sobre o Time Fúria RP</h3>
+                    <p>O time <strong>Fúria RP</strong> nasceu com o propósito de representar nossa escola com garra, espírito esportivo e dedicação. Cada atleta faz parte de uma família que acredita no poder do esporte como ferramenta de transformação e crescimento pessoal.</p>
+                    <p>Nosso compromisso vai além das quadras: incentivamos a disciplina, o respeito e a superação. A equipe treina constantemente para alcançar os melhores resultados e fortalecer os laços dentro e fora do jogo.</p>
+                    <p><em>“A verdadeira vitória é crescer juntos, jogando com o coração.”</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-</html>
+<!-- EQUIPE TÉCNICA -->
+<section id="equipe">
+  <div class="about-content">
+    <div class="about-box">
+      <h3>Equipe Técnica e Elenco</h3>
+      <p>Conheça as pessoas que fazem parte da história do <strong>Time Fúria RP</strong>. Cada integrante tem um papel essencial para o sucesso e o crescimento da equipe — dentro e fora das quadras.</p>
+    </div>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card">
+      <img src="assets/tecnico.jpg" alt="Técnico do time">
+      <h4>João Pereira</h4>
+      <p>Técnico Principal</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/auxiliar.jpg" alt="Auxiliar Técnica">
+      <h4>Marina Lopes</h4>
+      <p>Auxiliar Técnica</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/capita.jpg" alt="Capitã do time">
+      <h4>Alice Silva</h4>
+      <p>Capitã</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/libera.jpg" alt="Líbero do time">
+      <h4>Laura Costa</h4>
+      <p>Líbero</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/oposta.jpg" alt="Oposta">
+      <h4>Rafaela Nunes</h4>
+      <p>Oposta</p>
+    </div>
+
+    <div class="team-card">
+      <img src="assets/meio.jpg" alt="Meio de rede">
+      <h4>Camila Torres</h4>
+      <p>Meio de Rede</p>
+    </div>
+  </div>
+</section>
+
+<!-- ENDEREÇO -->
+<section id="endereco">
+  <div class="about-content">
+    <div class="about-box">
+      <h3>Onde Treinamos</h3>
+      <p>Os treinos do <strong>Time Fúria RP</strong> acontecem na quadra principal da <strong>Escola Estadual Alberto Santos Dumont</strong>. É aqui que nossa equipe se reúne para evoluir, planejar estratégias e fortalecer o espírito de equipe.</p>
+      <p><i class="fa-solid fa-location-dot"></i> Rua das Palmeiras, 245 — Ribeirão Preto, SP</p>
+      <p><i class="fa-solid fa-clock"></i> Horários de Treino: Segunda a Sexta, das 18h às 20h</p>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.701544961834!2d-47.815385!3d-23.582245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88a1c1e1234%3A0x1a3e1e6b1a35b67b!2sEscola%20Estadual%20Alberto%20Santos%20Dumont!5e0!3m2!1spt-BR!2sbr!4v1716417899123!5m2!1spt-BR!2sbr" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
