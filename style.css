@@ -1,6 +1,6 @@
 :root {
   --cor-primaria: #022b57;
-  --cor-secundaria: #ddd;
+  --cor-secundaria: #dddddd;
   --cor-destaque: #ffffff;
   --cor-menu: #004a998f;
   --cor-seta: #89bbf0df;
@@ -18,6 +18,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
 
 header {
   background-color: var(--cor-primaria);
@@ -50,36 +51,7 @@ header {
   object-fit: contain;
 }
 
-/* MENU LATERAL */
-#menu-lateral {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: var(--cor-menu);
-  transition: left 0.3s ease-in-out;
-  padding-top: 5rem;
-  z-index: 999;
-}
 
-#menu-lateral.show {
-  left: 0;
-}
-
-#menu-lateral ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem 2rem;
-}
-
-#menu-lateral a {
-  text-decoration: none;
-  color: var(--cor-destaque);
-  font-weight: bold;
-}
 
 /* MENU TOPO */
 .menu-topo {
@@ -105,40 +77,6 @@ header {
   color: var(--cor-destaque);
 }
 
-/* BOTÃO HAMBÚRGUER */
-.hamburguer {
-  width: 40px;
-  height: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5px;
-  z-index: 1001;
-}
-
-.hamburguer span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: var(--cor-secundaria);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.hamburguer.ativo span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
-
-.hamburguer.ativo span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburguer.ativo span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
 
 /* ==================== HERO BANNER ==================== */
 .hero {
@@ -305,43 +243,6 @@ section {
 .map-container:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-}
-
-/* Regimento */
-.regimento {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: justify;
-  line-height: 1.8;
-}
-
-.regimento h3 {
-  color: #001f3f;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.btn-center {
-  text-align: center;
-}
-
-.btn-regimento {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #001f3f;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.btn-regimento:hover {
-  background: #003366;
 }
 
 /* FOOTER */
@@ -648,12 +549,12 @@ body {
 }
 
 .hero-btn {
-  background: #ff4c00;
+  background: coral;
   font-weight: bold;
 }
 
 .hero-btn:hover {
-  background: #ff6622;
+  background: coral;
 }
 /* ===== Seção Equipe Técnica ===== */
 #equipe {
@@ -738,3 +639,133 @@ body {
   max-width: 1000px;
   margin: 40px auto 0 auto;
 }
+
+.patrocinio-section {
+  background: var(--cor-primaria);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.patrocinio-section h2 {
+  color: var(--cor-secundaria);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.patrocinio-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.beneficios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.beneficio-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.beneficio-card h3 {
+  color: var(--cor-secundaria);
+  margin-bottom: 10px;
+}
+
+.metas-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.metas-container h3 {
+  color: var(--cor-secundaria);
+  margin-bottom: 15px;
+}
+
+.metas-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.metas-container li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.final-text {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.btn-patrocinio {
+  display: inline-block;
+  background-color: coral;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-patrocinio:hover {
+  background-color: #ff85b8;
+}
+
+.patrocinio-section h2 {
+  color: var(--cor-secundaria);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.patrocinio-section h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: brilho 3s infinite;
+}
+
+@keyframes brilho {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+
+
