@@ -342,7 +342,7 @@ footer {
   .logo-central {
     position: absolute;
     top: -10px;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
   }
 
@@ -725,7 +725,7 @@ body {
 }
 
 .btn-patrocinio:hover {
-  background-color: #ff85b8;
+  background-color: coral;
 }
 
 .patrocinio-section h2 {
@@ -764,7 +764,6 @@ body {
     left: 100%;
   }
 }
-
 
 
 
